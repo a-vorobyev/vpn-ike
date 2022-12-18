@@ -2,7 +2,7 @@
 
 ```sh
 SERVER_IP=vds-ip
-USER=oddmin
+USER=user
 PASSWORD='***'
 SSH_PORT=12345
 
@@ -41,7 +41,7 @@ chmod 600 "/home/${USER}/.ssh/authorized_keys"
 ssh -o StrictHostKeyChecking=no \
     -o UserKnownHostsFile=/dev/null \
     -i vps/.ssh/id_vps \
-    -p 32931 oddmin@${SERVER_IP}
+    -p 32931 ${USER}@${SERVER_IP}
 
 ```
 
